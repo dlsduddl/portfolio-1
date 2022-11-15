@@ -41,6 +41,13 @@ align-items:center;
  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'PuradakGentleGothicR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.1/PuradakGentleGothicR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
   font-family:NanumBarunGothic;
 }
@@ -111,13 +118,13 @@ position:absolute;
   top:0;
   left:0;
   width:100%;
-  height: 100px;
+  height: 80px;
   background-color:#C4DDFF;
   z-index:1;
   border-bottom:solid 2px #ddd;
 }
 .menu-left {
-  height: 100px;
+  height: 80px;
 }
 .menu-right {
   margin-right: 100px;
@@ -126,7 +133,7 @@ position:absolute;
   padding: 10px;
 }
 .menu-right > li > a {
-  padding:10px;
+  padding:5px;
   font-size:1.1rem;
   font-weight:bold;
   color:white;
@@ -134,4 +141,136 @@ position:absolute;
 .menu-right > li:hover > a {
   color: #002566;
   border-bottom: solid 2px #002566;
+}
+
+/* section-1 */
+
+.section-1-img-wrap {
+  width: 75vw;
+  height: 38vw;
+  position:relative;
+}
+.section-1-img-wrap > div {
+  position:absolute;
+  filter:grayscale(100%);
+}
+.section-1-img-wrap > div:hover {
+  filter:grayscale(0);
+  cursor:pointer;
+}
+
+.section-1-img-wrap > div:first-child > img {
+  width: 30vw;
+}
+.section-1-img-wrap > div:nth-child(2) > img {
+  width: 16vw;  
+}
+.section-1-img-wrap > div:nth-child(3) > img {
+  width: 21vw;  
+}
+.section-1-img-wrap > div:first-child {
+  top:2vw;
+  left:0;
+  z-index:1;
+}
+.section-1-img-wrap > div:nth-child(2) {
+  top:18vw;
+  left:20vw;
+}
+.section-1-img-wrap > div:nth-child(3) {
+  top:10vw;
+  left:38vw;
+}
+
+/* 스크롤 */
+.scroll-wrap {
+    position: absolute;
+  top: 40vw;
+  left: 85vw;
+}
+.scroll-downs {
+
+  margin: auto;
+  width :34px;
+  height: 55px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #363636;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #363636;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
+
+/* section-1-txt */
+.section-1-txt-wrap {
+  position:absolute;
+  top: 10vw;
+  left: 73vw;
+}
+.section-1-txt-wrap > p {
+  font-size:2.3vw;
+  font-weight:bold;
+   font-family: 'PuradakGentleGothicR';
+
+}
+
+/* flower */
+.flower {
+  position:absolute;
+  top:25vw;
+  left:2vw;
+  width: 250px;
+  height: 80px;
+  background: #FFE15D;
+  border-radius: 50px;
+  margin-top: 200px;}
+.flower::before {
+  content: "";
+  display: block;
+  position: absolute;
+   width: 250px;
+  height: 80px;
+  background: #FFE15D;
+  border-radius: 50px;
+  transform: rotate(60deg)
+}
+.flower::after {
+  content: "";
+  display: block;
+  position: absolute;
+   width: 250px;
+  height: 80px;
+  background: #FFE15D;
+  border-radius: 50px;
+  transform: rotate(-60deg)}
+
+.flower {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }

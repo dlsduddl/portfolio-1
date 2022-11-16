@@ -17,6 +17,28 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css">
   
+  <div class="more-popup">
+    <div class="popup-wrap flex align-center justify-center h-full">
+      <div class="in-popup flex flex-col">
+        <div class="in-popup__head flex-shrink-0">
+          <div onclick="$('.more-popup').hide();" class="btn-close ml-auto"></div>
+        </div>
+        <div class="in-popup__body flex-grow p-10px">
+          <h3 class="popup-content-title">
+            안녕하세요.
+          </h3>
+          <div class="popup-content-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum doloremque ratione aperiam dolor possimus odit natus vitae corrupti quisquam magnam quo unde, minima atque. Sint exercitationem consectetur quo iste amet?
+          </div>
+  
+        </div>
+        <div class="in-popup__foot py-10px flex flex-shrink-0 justify-center">
+          <a href="#" class="btn-close-2" onclick="$('.more-popup').hide();">닫기</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <div class="top-bar-wrap">
     <div class="top-bar">
       <nav class="menu-bar flex">
@@ -38,7 +60,7 @@
     <div class="line-tab line-tab-2" data-menuanchor="section-2">
       <a href="#section-2">About Me</a>
     </div>
-      <div class="line-tab line-tab-2" data-menuanchor="section-3">
+    <div class="line-tab line-tab-2" data-menuanchor="section-3">
       <a href="#section-3">About Me</a>
     </div>
     <div class="line-tab line-tab-4" data-menuanchor="section-4">
@@ -47,13 +69,13 @@
     <div class="line-tab line-tab-5" data-menuanchor="section-5">
       <a href="#section-5">Contact Me</a>
     </div>
-   </div>
+  </div>
   
   <div class="site-wrap">
     <div id="fullpage">
-          <section class="section" data-anchor="section-1">
-            <div class="flower"></div>
-            
+      <section class="section" data-anchor="section-1">
+        <div class="flower"></div>
+  
         <div class="section-1-img-wrap">
           <div><img src="https://i.postimg.cc/bYBg4ZBG/Kakao-Talk-20221109-170219727.jpg" alt=""></div>
           <div><img src="https://i.postimg.cc/5y636J6N/Kakao-Talk-20221109-170711749.jpg" alt=""></div>
@@ -66,14 +88,41 @@
             ENJOY <br>MY PORTFOLIO</p>
         </div>
         <div class="scroll-wrap">
-        <div class="scroll-downs">
-    <div class="mousey">
-      <div class="scroller"></div>
-    </div>
-          
-  </div><p style="color:#363636;"><strong>scroll down</strong></p></div>
+          <div class="scroll-downs">
+            <div class="mousey">
+              <div class="scroller"></div>
+            </div>
+  
+          </div>
+          <p style="color:#363636;"><strong>scroll down</strong></p>
+        </div>
       </section>
-      <section class="section" data-anchor="section-2">섹션 2</section>
+  
+      <section class="section" data-anchor="section-2">
+        <div class="flex flex-col align-center justify-center">
+          <div class="section-2-1 flex align-center justify-center">
+            <img src="https://i.postimg.cc/MphrXs77/Kakao-Talk-20221116-001138818.png" alt="">
+            <div class="section-2-1-txt">
+              <p><strong>PROFILE</strong></p>
+              <p>
+                이인영 <br>
+                1997.10.06 <br>
+                010.2337.1006 <br>
+                inyoung106@naver.com <br>
+                ISTJ
+              </p>
+            </div>
+            
+            <div class="popup-button flex align-center justify-center" onclick="$('.more-popup').show();">
+              <p>더 알아보기</p>
+            </div>
+          </div>
+  
+          <div class="section-2-2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae temporibus et voluptates ut, molestias praesentium minima voluptatem ratione facere illum? Sed, quae accusantium. Neque quis reprehenderit quas ipsa saepe? Fugit?</p>
+          </div>
+        </div>
+      </section>
       <section class="section" data-anchor="section-3">섹션 3</section>
       <section class="section" data-anchor="section-4">섹션 4</section>
       <section class="section" data-anchor="section-5">섹션 5</section>

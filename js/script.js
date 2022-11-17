@@ -12,11 +12,11 @@ $(".circle")
     // 방향 반전 여부
     reverse:true,
     // 그래프 사이즈
-    size: 180,
+    size: 160,
     // 그래프 모서리, 지울 시 각진 모양
     lineCap:'round',
     // 그래프 두께
-    thickness: 40,
+    thickness: 38,
     // 그래프 색상
     fill: {
       gradient: ["skyblue", "#AF06FF"]

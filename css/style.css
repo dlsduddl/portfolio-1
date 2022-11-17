@@ -42,6 +42,9 @@ height:100%;
 .ml-auto {
   margin-left: auto;
 }
+.mr-50px {
+  margin-right: 50px;
+}
 /* 커스텀 */
 @font-face {
  font-family: 'NanumBarunGothic';
@@ -70,7 +73,6 @@ html {
   display:flex;
   align-items:center;
   justify-content:center;
-/*   font-size:10vw; */
 }
 
 .line {
@@ -432,5 +434,129 @@ position:absolute;
   font-weight:bold;
 }
 .circle-wrap {
-  margin: 10px;
+  margin: 15px;
+}
+/* section-3 */
+
+/* section-4 */
+.section-4 {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* 섹션4 슬라이드 */
+.section-4 input[id*="slide"] {
+  display:none;
+}
+.section-4 {
+  position:relative;
+}
+.section-4 .slidewrap {
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow:hidden;
+  height:90vh;
+  margin-top:10vh;
+}
+.section-4 .slidelist {
+  white-space:nowrap;
+  height:90vh;
+}
+.section-4 .slidelist > li {
+  display: inline-block;
+  vertical-align:middle;
+  width: 100%;
+  transition: all ,1s;
+  height:90vh;
+}
+
+.section-4 .slidelist > li > div {
+  overflow:hidden;
+  border-radius:10px;
+  margin: 0 10px;
+  height:100%;
+}
+
+.section-4 .slidelist label {
+  position:absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translatey(-50%);
+  padding:50px;
+  cursor: pointer;
+}
+.section-4 .slidelist .left {
+  left:100px;
+  background:url('https://i.postimg.cc/qBCRRBfS/2022-11-18-015405.jpg') center center / 60% no-repeat;
+  opacity:70%;
+}
+.section-4 .slidelist .right {
+  right: 100px;
+  background:url('https://i.postimg.cc/dVJt487c/2022-11-18-015423.jpg') center center / 60% no-repeat;
+  opacity:70%;
+}
+
+
+.section-4 [id="slide01"]:checked ~ .slidewrap .slidelist > li {
+  transform: translatex(0%);
+}
+.section-4 [id="slide02"]:checked ~ .slidewrap .slidelist > li {
+  transform: translatex(-100%);
+}
+.section-4 [id="slide03"]:checked ~ .slidewrap .slidelist > li {
+  transform: translatex(-200%);
+}
+
+.section-4 .slide-control [class*="control"] {
+  display:none;
+}
+.section-4 [id="slide01"]:checked ~ .slidewrap .control01 {
+  display: block;
+}
+.section-4 [id="slide02"]:checked ~ .slidewrap .control02 {
+  display: block;
+}
+.section-4 [id="slide03"]:checked ~ .slidewrap .control03 {
+  display: block;
+}
+
+.mockup-img > img {
+  width:25vw;
+}
+.tmoney-mockup > img {
+  width:35vw;
+}
+.baemin-mockup > img{
+  width:40vw;
+}
+.mockup-img {
+  margin-left: 70px;
+  margin-right:70px;
+}
+.mockup-img-wrap > h3 {
+  margin-top:50px;
+}
+.mockup-img-wrap > p {
+  padding:0;
+  margin:3px;
+}
+.git-hub,
+.wiken,
+.process {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius:30px;
+  font-weight:bold;
+  display:inline-block;
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right:5px;
+  background-color:#ddd;
+}
+.git-hub:hover,
+.wiken:hover,
+.process:hover {
+  background-color: gray;
+  border: 1px solid white;
+  color:white;
 }

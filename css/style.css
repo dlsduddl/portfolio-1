@@ -56,9 +56,14 @@ height:100%;
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 html {
-  font-family:NanumBarunGothic;
+  font-family: 'NanumSquareNeo-Variable';
 }
 
 #fullpage > .section > div {
@@ -284,22 +289,27 @@ position:absolute;
   }
 }
 /* section-2 */
-.section-2-1 > img {
-  width: 18vw;
+
+.section-2-1 > div > .profile-img {
+  width: 16vw;
 }
 .section-2-1-txt {
   margin-left: 50px;
   font-size: 1.1vw;
   margin-right: 100px;
 }
-.section-2-1 > .popup-button {
+.popup-button-wrap {
+  margin-top: 50px;
+}
+.popup-button {
+  position:absolute;
   width: 130px;
   height: 60px;
   border-radius: 50px;
   background-color: #6AAEFF;
   margin-right: 5px;
 } 
-.section-2-1 > .popup-button::before {
+.popup-button::before {
   content: "";
   display: block;
   position: absolute;
@@ -337,13 +347,15 @@ position:absolute;
   100% {
     margin-top: 20px;
   }
+} 
+.popup-button {
+  cursor:pointer;
 }
 .popup-button > p {
   color: white;
   font-size: 1.1rem;
-  cursor:pointer;
 }
-.popup-button > p:hover {
+.popup-button:hover > p {
   color: #363636;
   font-weight:bold;
 }
@@ -400,8 +412,25 @@ position:absolute;
   border-top:1px solid black;
 }
 
-
+/* section-2-2 */
 .section-2-2 {
-  margin-top:50px;
-  width: 50vw;
+  margin-top: 50px;
+}
+.skills {
+  margin-left: 30px;
+}
+.circle {
+  position:relative;
+  display:inline-block;
+}
+
+.circle .percent {
+  position:absolute;
+  top:48%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  font-weight:bold;
+}
+.circle-wrap {
+  margin: 10px;
 }

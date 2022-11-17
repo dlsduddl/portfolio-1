@@ -10,98 +10,102 @@
   <script src="js/script.js" defer></script>
 </head>
 <body>
-  <!-- 제이쿼리 불러오기 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <!-- 풀페이지 불러오기 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css">
-  
-  <div class="more-popup">
-    <div class="popup-wrap flex align-center justify-center h-full">
-      <div class="in-popup flex flex-col">
-        <div class="in-popup__head flex-shrink-0">
-          <div onclick="$('.more-popup').hide();" class="btn-close ml-auto"></div>
+<!-- 제이쿼리 불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- 풀페이지 불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css">
+
+<!-- circle-progress 불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+
+<div class="more-popup">
+  <div class="popup-wrap flex align-center justify-center h-full">
+    <div class="in-popup flex flex-col">
+      <div class="in-popup__head flex-shrink-0">
+        <div onclick="$('.more-popup').hide();" class="btn-close ml-auto"></div>
+      </div>
+      <div class="in-popup__body flex-grow p-10px">
+        <h3 class="popup-content-title">
+          안녕하세요.
+        </h3>
+        <div class="popup-content-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum doloremque ratione aperiam dolor possimus odit natus vitae corrupti quisquam magnam quo unde, minima atque. Sint exercitationem consectetur quo iste amet?
         </div>
-        <div class="in-popup__body flex-grow p-10px">
-          <h3 class="popup-content-title">
-            안녕하세요.
-          </h3>
-          <div class="popup-content-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum doloremque ratione aperiam dolor possimus odit natus vitae corrupti quisquam magnam quo unde, minima atque. Sint exercitationem consectetur quo iste amet?
-          </div>
-  
-        </div>
-        <div class="in-popup__foot py-10px flex flex-shrink-0 justify-center">
-          <a href="#" class="btn-close-2" onclick="$('.more-popup').hide();">닫기</a>
-        </div>
+
+      </div>
+      <div class="in-popup__foot py-10px flex flex-shrink-0 justify-center">
+        <a href="#" class="btn-close-2" onclick="$('.more-popup').hide();">닫기</a>
       </div>
     </div>
   </div>
-  
-  <div class="top-bar-wrap">
-    <div class="top-bar">
-      <nav class="menu-bar flex">
-        <div class="menu-left flex-grow"></div>
-        <ul class="menu-right flex flex-shrink-0 align-center justify-center">
-          <li><a href="#section-1">HOME</a></li>
-          <li><a href="#section-2">ABOUT ME</a></li>
-          <li><a href="#section-4">PORTFOLIO</a></li>
-          <li><a href="#section-5">CONTACT ME</a></li>
-        </ul>
-      </nav>
-    </div>
+</div>
+
+<div class="top-bar-wrap">
+  <div class="top-bar">
+    <nav class="menu-bar flex">
+      <div class="menu-left flex-grow"></div>
+      <ul class="menu-right flex flex-shrink-0 align-center justify-center">
+        <li><a href="#section-1">HOME</a></li>
+        <li><a href="#section-2">ABOUT ME</a></li>
+        <li><a href="#section-4">PORTFOLIO</a></li>
+        <li><a href="#section-5">CONTACT ME</a></li>
+      </ul>
+    </nav>
   </div>
-  
-  <div class="line">
-    <div class="line-tab line-tab-1" data-menuanchor="section-1">
-      <a href="#section-1">Home</a>
-    </div>
-    <div class="line-tab line-tab-2" data-menuanchor="section-2">
-      <a href="#section-2">About Me</a>
-    </div>
-    <div class="line-tab line-tab-2" data-menuanchor="section-3">
-      <a href="#section-3">About Me</a>
-    </div>
-    <div class="line-tab line-tab-4" data-menuanchor="section-4">
-      <a href="#section-4">Portfolio</a>
-    </div>
-    <div class="line-tab line-tab-5" data-menuanchor="section-5">
-      <a href="#section-5">Contact Me</a>
-    </div>
+</div>
+
+<div class="line">
+  <div class="line-tab line-tab-1" data-menuanchor="section-1">
+    <a href="#section-1">Home</a>
   </div>
-  
-  <div class="site-wrap">
-    <div id="fullpage">
-      <section class="section" data-anchor="section-1">
-        <div class="flower"></div>
-  
-        <div class="section-1-img-wrap">
-          <div><img src="https://i.postimg.cc/bYBg4ZBG/Kakao-Talk-20221109-170219727.jpg" alt=""></div>
-          <div><img src="https://i.postimg.cc/5y636J6N/Kakao-Talk-20221109-170711749.jpg" alt=""></div>
-          <div><img src="https://i.postimg.cc/K8n5KJvL/Kakao-Talk-20221109-170302521.jpg" alt=""></div>
-        </div>
-        <div class="section-1-txt-wrap">
-          <p>HI,<br>
-            MY NAME IS <br>
-            INYOUNG <br> <br>
-            ENJOY <br>MY PORTFOLIO</p>
-        </div>
-        <div class="scroll-wrap">
-          <div class="scroll-downs">
-            <div class="mousey">
-              <div class="scroller"></div>
-            </div>
-  
+  <div class="line-tab line-tab-2" data-menuanchor="section-2">
+    <a href="#section-2">About Me</a>
+  </div>
+  <div class="line-tab line-tab-2" data-menuanchor="section-3">
+    <a href="#section-3">About Me</a>
+  </div>
+  <div class="line-tab line-tab-4" data-menuanchor="section-4">
+    <a href="#section-4">Portfolio</a>
+  </div>
+  <div class="line-tab line-tab-5" data-menuanchor="section-5">
+    <a href="#section-5">Contact Me</a>
+  </div>
+</div>
+
+<div class="site-wrap">
+  <div id="fullpage">
+    <section class="section" data-anchor="section-1">
+      <div class="flower"></div>
+
+      <div class="section-1-img-wrap">
+        <div><img src="https://i.postimg.cc/bYBg4ZBG/Kakao-Talk-20221109-170219727.jpg" alt=""></div>
+        <div><img src="https://i.postimg.cc/5y636J6N/Kakao-Talk-20221109-170711749.jpg" alt=""></div>
+        <div><img src="https://i.postimg.cc/K8n5KJvL/Kakao-Talk-20221109-170302521.jpg" alt=""></div>
+      </div>
+      <div class="section-1-txt-wrap">
+        <p>HI,<br>
+          MY NAME IS <br>
+          INYOUNG <br> <br>
+          ENJOY <br>MY PORTFOLIO</p>
+      </div>
+      <div class="scroll-wrap">
+        <div class="scroll-downs">
+          <div class="mousey">
+            <div class="scroller"></div>
           </div>
-          <p style="color:#363636;"><strong>scroll down</strong></p>
+
         </div>
-      </section>
-  
-      <section class="section" data-anchor="section-2">
-        <div class="flex flex-col align-center justify-center">
-          <div class="section-2-1 flex align-center justify-center">
-            <img src="https://i.postimg.cc/MphrXs77/Kakao-Talk-20221116-001138818.png" alt="">
+        <p style="color:#363636;"><strong>scroll down</strong></p>
+      </div>
+    </section>
+
+    <section class="section" data-anchor="section-2">
+      <div class="flex align-center justify-center">
+        <div class="section-2-1 flex flex-col align-center justify-center">
+          <div class="flex align-center justify-center">
+            <img class="profile-img" src="https://i.postimg.cc/MphrXs77/Kakao-Talk-20221116-001138818.png" alt="profile-img">
             <div class="section-2-1-txt">
               <p><strong>PROFILE</strong></p>
               <p>
@@ -112,21 +116,74 @@
                 ISTJ
               </p>
             </div>
-            
+          </div>
+          
+          <div class="popup-button-wrap">
             <div class="popup-button flex align-center justify-center" onclick="$('.more-popup').show();">
               <p>더 알아보기</p>
             </div>
           </div>
-  
-          <div class="section-2-2">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae temporibus et voluptates ut, molestias praesentium minima voluptatem ratione facere illum? Sed, quae accusantium. Neque quis reprehenderit quas ipsa saepe? Fugit?</p>
+        </div>
+
+        <div class="section-2-2">
+          <div class="flex flex-col">
+            <h2 class="skills">SKILLS</h2>
+            <div class="circle-box-1 flex">
+              <div class="circle-wrap flex flex-col align-center justify-center ">
+                <div class="circle circle-1">
+                  <div class="percent percent-1"></div>
+                </div>
+                <p><strong>HTML</strong></p>
+              </div>
+
+              <div class="circle-wrap flex flex-col align-center justify-center ">
+                <div class="circle circle-2">
+                  <div class="percent percent-2"></div>
+                </div>
+                <p><strong>CSS</strong></p>
+              </div>
+
+              <div class="circle-wrap flex flex-col align-center justify-center ">
+                <div class="circle circle-3">
+                  <div class="percent percent-3"></div>
+                </div>
+                <p><strong>JS</strong></p>
+              </div>
+            </div>
+
+            <div class="circle-box-2 flex">
+              <div class="circle-wrap flex flex-col align-center justify-center ">
+                <div class="circle circle-4">
+                  <div class="percent percent-4"></div>
+                </div>
+                <p><strong>Photoshop</strong></p>
+              </div>
+
+              <div class="circle-wrap flex flex-col align-center justify-center ">
+                <div class="circle circle-5">
+                  <div class="percent percent-5"></div>
+                </div>
+                <p><strong>Illustrator</strong></p>
+              </div>
+
+              <div class="circle-wrap flex flex-col align-center justify-center ">
+                <div class="circle circle-6">
+                  <div class="percent percent-6"></div>
+                </div>
+                <p><strong>Figma</strong></p>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-      <section class="section" data-anchor="section-3">섹션 3</section>
-      <section class="section" data-anchor="section-4">섹션 4</section>
-      <section class="section" data-anchor="section-5">섹션 5</section>
-    </div>
+      </div>
+    </section>
+
+    <section class="section" data-anchor="section-3">
+
+    </section>
+    <section class="section" data-anchor="section-4">섹션 4</section>
+    <section class="section" data-anchor="section-5">섹션 5</section>
   </div>
+</div>
 </body>
 </html>

@@ -447,7 +447,7 @@ position:absolute;
   top:510px;
   left: 60px;
   font-size:2.3rem;
-  animation: bird-move 5s ease infinite;
+  animation: bird-move 8s ease infinite;
 }
 @keyframes bird-move {
   0% {
